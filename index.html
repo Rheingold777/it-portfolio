@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernhard Suppan | IT Network & Security Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background: var(--gray-50);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+        
+        .hero .tagline {
+            font-size: 1rem;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-links a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .hero-links .primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .hero-links .primary:hover {
+            background: var(--primary-dark);
+        }
+        
+        .hero-links .secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid #6b7280;
+        }
+        
+        .hero-links .secondary:hover {
+            border-color: white;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: var(--gray-900);
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .skill-card ul {
+            list-style: none;
+            color: var(--gray-600);
+        }
+        
+        .skill-card li {
+            padding: 4px 0;
+        }
+        
+        .skill-card li::before {
+            content: "✓ ";
+            color: var(--primary);
+        }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .project-card .content {
+            padding: 20px;
+        }
+        
+        .project-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .project-card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+        }
+        
+        .project-card .tags {
+            margin-top: 12px;
+        }
+        
+        .project-card .tag {
+            display: inline-block;
+            background: var(--gray-100);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        /* Education */
+        .education-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .education-item h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .education-item .school {
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .education-item .date {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+        
+        /* Courses */
+        .courses-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        
+        .course-item {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            border-left: 3px solid var(--primary);
+        }
+        
+        .course-item .code {
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+        
+        .course-item .name {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact */
+        .contact {
+            background: var(--gray-900);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact p {
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+        
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--gray-900);
+            color: #6b7280;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Bernhard Suppan</h1>
+            <p class="subtitle">IT Network & Security Professional</p>
+            <p class="tagline">BS in Information Technology (Network & Security) from Liberty University. Combining technical expertise with business acumen to solve complex technology challenges.</p>
+            <div class="hero-links">
+                <a href="https://www.linkedin.com/in/bernhardsuppan" class="primary">LinkedIn</a>
+                <a href="mailto:bsuppan@gmail.com" class="secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Network Engineering</h3>
+                    <ul>
+                        <li>Cisco IOS Configuration</li>
+                        <li>OSPFv2 Routing</li>
+                        <li>VLANs & Inter-VLAN Routing</li>
+                        <li>CDP, LLDP, NTP Protocols</li>
+                        <li>NAT/PAT Configuration</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Security</h3>
+                    <ul>
+                        <li>Access Control Lists (ACLs)</li>
+                        <li>Network Security Planning</li>
+                        <li>Firewall Configuration</li>
+                        <li>Password Recovery Procedures</li>
+                        <li>Security Policy Development</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Systems & Software</h3>
+                    <ul>
+                        <li>Windows Server Administration</li>
+                        <li>Linux/Unix Systems</li>
+                        <li>SQL Database Management</li>
+                        <li>Java Programming</li>
+                        <li>Web Development (HTML/CSS/JS)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Cisco Packet Tracer</li>
+                        <li>Wireshark</li>
+                        <li>Draw.io (System Design)</li>
+                        <li>Git Version Control</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background: white;">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/ospfv2-lab.png" alt="OSPFv2 Network Configuration">
+                    <div class="content">
+                        <h3>Single-Area OSPFv2 Configuration</h3>
+                        <p>Configured point-to-point OSPF routing across multiple routers, demonstrating dynamic routing protocol implementation and network convergence.</p>
+                        <div class="tags">
+                            <span class="tag">Cisco IOS</span>
+                            <span class="tag">OSPF</span>
+                            <span class="tag">Routing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/cdp-lldp-ntp.png" alt="Network Discovery Protocols">
+                    <div class="content">
+                        <h3>CDP, LLDP, and NTP Configuration</h3>
+                        <p>Implemented network discovery protocols and time synchronization across enterprise network infrastructure for improved manageability.</p>
+                        <div class="tags">
+                            <span class="tag">CDP</span>
+                            <span class="tag">LLDP</span>
+                            <span class="tag">NTP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/tftp-upgrade.png" alt="IOS Image Upgrade">
+                    <div class="content">
+                        <h3>TFTP Server IOS Upgrade</h3>
+                        <p>Executed Cisco IOS image upgrades using TFTP server, including backup procedures and verification of successful firmware deployment.</p>
+                        <div class="tags">
+                            <span class="tag">TFTP</span>
+                            <span class="tag">IOS</span>
+                            <span class="tag">Firmware</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="school">Liberty University</p>
+                <p class="date">Concentration: Network & Security | Completed May 2025</p>
+            </div>
+            <div class="education-item">
+                <h3>Master of Business Administration (In Progress)</h3>
+                <p class="school">Liberty University</p>
+                <p class="date">Started 2025</p>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background: white;">
+        <div class="container">
+            <h2>Relevant Coursework</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <span class="code">CSIS-430</span>
+                    <span class="name">CISCO Advanced Networking</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-335</span>
+                    <span class="name">Network Security</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-331</span>
+                    <span class="name">Networks</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-330</span>
+                    <span class="name">Business Data Communication</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-320</span>
+                    <span class="name">IS Hardware & Software</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-312</span>
+                    <span class="name">Advanced OOP (Java)</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">CSIS-310</span>
+                    <span class="name">Web Programming</span>
+                </div>
+                <div class="course-item">
+                    <span class="code">INFT-241</span>
+                    <span class="name">CompTIA A+ Certification</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Open to opportunities in network engineering, security, and IT infrastructure.</p>
+            <p>
+                <a href="mailto:bsuppan@gmail.com">bsuppan@gmail.com</a> · 
+                <a href="https://www.linkedin.com/in/bernhardsuppan">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            © 2025 Bernhard Suppan. Built with purpose.
+        </div>
+    </footer>
+</body>
+</html>
