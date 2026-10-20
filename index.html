@@ -3,63 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bernhard Suppan | Local SEO + AI Automation</title>
-<meta name="description" content="Bernhard Suppan: local SEO and AI automation for small businesses. BS in IT (Network &amp; Security), MBA in progress at Liberty University.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0a0e14;--bg2:#10151d;--line:#1f2732;--tx:#e6edf3;--mute:#8b98a8;--ac:#22d3ee;--mono:'JetBrains Mono',ui-monospace,monospace}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-family:var(--mono);font-size:14px}
-nav .logo{color:var(--tx);font-weight:700}nav .logo b{color:var(--ac)}
-nav .links a{color:var(--mute);margin-left:22px}
-.hero{min-height:72vh;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;padding:40px 0 64px;border-bottom:1px solid var(--line)}
-.eyebrow{font-family:var(--mono);color:var(--ac);font-size:14px;margin-bottom:18px}
-.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:1.04;letter-spacing:-.03em;font-weight:800}
-.hero h1 em{font-style:normal;color:var(--ac)}
-.hero p.sub{color:var(--mute);font-size:18px;margin:20px 0 32px;max-width:520px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{font-family:var(--mono);font-size:14px;padding:12px 20px;border-radius:8px;border:1px solid var(--line);color:var(--tx)}
-.btn.p{background:var(--ac);color:#04121a;border-color:var(--ac);font-weight:700}
-.btn:hover{text-decoration:none;border-color:var(--ac)}
-.hero img{width:240px;height:240px;border-radius:20px;object-fit:cover;border:1px solid var(--line);background:#fff}
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-h2{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ac);text-transform:uppercase;letter-spacing:.12em;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s}
-.card:hover{border-color:var(--ac)}
-.card .k,.row .k{font-family:var(--mono);font-size:12px;color:var(--mute)}
-.card h3{font-size:20px;letter-spacing:-.01em}.card h3 a{color:var(--tx)}
-.card p{color:var(--mute);font-size:15px;flex:1;overflow-wrap:anywhere}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips span{font-family:var(--mono);font-size:11px;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:var(--mute)}
-ul.v{list-style:none}ul.v li{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line);flex-wrap:wrap}
-ul.v li a{font-weight:600;min-width:200px}ul.v li span{color:var(--mute);font-size:15px}
-.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.lab{background:var(--bg2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.lab img{width:100%;height:180px;object-fit:cover;background:#fff;display:block}
-.lab figcaption{padding:14px 16px;display:flex;flex-direction:column}.lab figcaption span{font-family:var(--mono);font-size:12px;color:var(--mute)}
-.more{margin-top:20px;font-family:var(--mono);font-size:14px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-.row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
-.cred{padding:12px 0;border-top:1px solid var(--line)}.cred b{display:block}.cred span{color:var(--mute);font-size:14px}
-.contact{text-align:center;border:0}.contact h3{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin-bottom:24px}
-.contact .btns{justify-content:center}
-footer{padding:28px 0;font-family:var(--mono);font-size:12px;color:var(--mute);text-align:center}
-.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
-.cert{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:6px}
-.cert b{font-size:16px}.cert span{color:var(--mute);font-size:13px;font-family:var(--mono)}.cert a.vf{font-family:var(--mono);font-size:13px;margin-top:auto}
-.badge{display:inline-block;font-family:var(--mono);font-size:11px;color:#04121a;background:var(--ac);border-radius:999px;padding:2px 8px;width:max-content}
-h3.sub{font-size:15px;color:var(--tx);margin:28px 0 14px;font-weight:600}h3.sub:first-of-type{margin-top:0}
-.pcard{padding:0;overflow:hidden}.pcard .vis{height:120px;display:flex;align-items:center;justify-content:center;font-size:44px}
-.pcard .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}.pcard .out{color:var(--tx);font-size:14px}.pcard .out b{color:var(--ac);font-family:var(--mono);font-size:12px;font-weight:500;display:block}
-.v1{background:linear-gradient(135deg,#0e7490,#7c3aed)}.v2{background:linear-gradient(135deg,#15803d,#0e7490)}.v3{background:linear-gradient(135deg,#b45309,#be185d)}.v4{background:linear-gradient(135deg,#1d4ed8,#22d3ee)}.v5{background:linear-gradient(135deg,#334155,#0f766e)}
-#work .grid{grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
-@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:16px;gap:28px}.hero img{width:120px;height:120px;order:-1}nav .links{display:none}.two{grid-template-columns:1fr}section{padding:52px 0}}
-</style>
+<title>Bernhard Suppan | Operator, Local SEO + AI Automation</title>
+<meta name="description" content="Bernhard Suppan: operator and builder in Texas. $800M+ in loan signings notarized, 90% repeat clients. Local SEO and AI automation through Rheingold Digital. Open to contract and fractional work.">
+<link rel="canonical" href="https://bernhardsuppan.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://bernhardsuppan.com/">
+<meta property="og:title" content="Bernhard Suppan | Operator first. Builder second.">
+<meta property="og:description" content="$800M+ in loan signings notarized. Now building local SEO and AI automation for small businesses. Open to contract and fractional work.">
+<meta property="og:image" content="https://bernhardsuppan.com/assets/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Bernhard Suppan","url":"https://bernhardsuppan.com/","image":"https://bernhardsuppan.com/assets/headshot.jpg","jobTitle":"Founder","worksFor":{"@type":"Organization","name":"Rheingold Digital","url":"https://rheingolddigital.com/"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Liberty University"},"knowsLanguage":["en","de"],"address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/bernhardsuppan","https://github.com/Rheingold777"]}
+</script>
 <!-- Google Analytics 4 (G-V70C5KFFZ8): fires only on the live domain, not on previews/localhost -->
 <script>
 (function () {
@@ -83,48 +42,130 @@ h3.sub{font-size:15px;color:var(--tx);margin:28px 0 14px;font-weight:600}h3.sub:
   });
 })();
 </script>
-
 </head>
 <body>
+
+<header class="top"><div class="wrap">
+<a class="brand" href="/">Bernhard Suppan</a>
+<nav class="nav" aria-label="Main">
+<a href="#work">Work with me</a>
+<a href="#proof">Proof</a>
+<a href="#hire">Hire me</a>
+<a class="btn p" href="https://rheingolddigital.com/contact">Book a call</a>
+</nav>
+</div></header>
+
+<main>
 <div class="wrap">
-<nav><a class="logo" href="#">bernhard<b>.</b>suppan</a><div class="links"><a href="#certificates">certificates</a><a href="#work">projects</a><a href="#labs">labs</a><a href="#creds">education</a><a href="#contact">contact</a></div></nav>
-<header class="hero">
-<div>
-<div class="eyebrow">&gt; Bernhard Suppan · Texas</div>
-<h1>Local SEO + <em>AI automation</em> for small businesses.</h1>
-<p class="sub">BS in IT (Network &amp; Security). MBA in progress. I build the systems that run my own businesses.</p>
-<div class="btns"><a class="btn p" href="#work">See the projects</a><a class="btn" href="#certificates">Certificates</a><a class="btn" href="https://www.linkedin.com/in/bernhardsuppan" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Rheingold777" target="_blank" rel="noopener">GitHub</a></div>
+<section class="hero" aria-label="Intro">
+<div class="copy">
+<p class="eyebrow">Operator · Builder · Texas, works remote</p>
+<h1><span>Operator first.</span><span class="ac">Builder second.</span></h1>
+<p class="lead">I managed in 5-star hospitality, directed international mission programs, and have notarized $800M+ in loan signings. Now I build the local SEO and AI automation that run my businesses. And yours.</p>
+<div class="btns">
+<a class="btn p" href="https://rheingolddigital.com/contact">Book a free visibility check</a>
+<a class="btn" href="#hire">Hire me for a contract</a>
 </div>
-<picture><source srcset="assets/headshot.webp" type="image/webp"><img src="assets/headshot.jpg" alt="Bernhard Suppan, smiling headshot" width="640" height="640"></picture>
-</header>
-
-<section id="certificates"><h2>// Certificates</h2><h3 class="sub">Anthropic · Claude Academy</h3><div class="certs"><div class="cert"><span class="badge">Passed 100%</span><b>Claude 101</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://verify.skilljar.com/c/3dv4jkt984a2" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>AI Fluency: Framework &amp; Foundations</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/4eb1d12a921b70a8415e87278ca25619" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Claude Code in Action</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/f83b4004936eb5883d4b7469997f448d" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Introduction to Model Context Protocol</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/8bc126b3c636fe4b3e0284db522e80e6" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Model Context Protocol: Advanced Topics</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/62d82185ee038b88aa3bcbc15c853c36" target="_blank" rel="noopener">Verify ↗</a></div></div><h3 class="sub">Google Cloud Skills Boost · <a href="https://www.skills.google/public_profiles/6789182f-9c75-49cd-b3df-f62cb9f403fa" target="_blank" rel="noopener">View all ↗</a></h3><div class="certs"><div class="cert"><span class="badge">New · Completion badge</span><b>Responsible AI: Applying AI Principles with Google Cloud</b><span>Google Cloud · Oct 12, 2026</span><a class="vf" href="https://www.skills.google/public_profiles/6789182f-9c75-49cd-b3df-f62cb9f403fa/badges/28826274" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Completion badge</span><b>Introduction to Large Language Models</b><span>Google Cloud · Oct 12, 2026</span><a class="vf" href="https://www.skills.google/public_profiles/6789182f-9c75-49cd-b3df-f62cb9f403fa/badges/28826271" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Completion badge</span><b>Introduction to Generative AI</b><span>Google Cloud · Oct 12, 2026</span><a class="vf" href="https://www.skills.google/public_profiles/6789182f-9c75-49cd-b3df-f62cb9f403fa/badges/28826254" target="_blank" rel="noopener">Verify ↗</a></div></div><h3 class="sub">Google</h3><div class="certs"><div class="cert"><b>Fundamentals of Digital Marketing</b><span>Google · Oct 2026 · Credential ID 483666419</span></div></div><h3 class="sub">Education &amp; IT</h3><div class="certs"><div class="cert"><b>BS Information Technology</b><span>Liberty University · Network &amp; Security · 2025</span></div><div class="cert"><b>MBA (In Progress)</b><span>Liberty University · Strategic Management · Expected 2027</span></div><div class="cert"><b>CompTIA A+ Coursework</b><span>Hardware &amp; OS · Exam prep complete</span></div></div></section>
-
-<section id="work"><h2>// Projects</h2><div class="grid"><article class="card pcard"><div class="vis v1" aria-hidden="true">🎙️</div><div class="body"><div class="k">01 / AI system</div><h3><a href="https://sermonrecap.church" target="_blank" rel="noopener">SermonRecap ↗</a></h3><p>Turns each sermon into a written recap and follow-up texts for New Life Hutto.</p><div class="out"><b>Outcome</b>Sermon → recap &amp; texts, ready to share</div><div class="chips"><span>Muse</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></div></div></article><article class="card pcard"><div class="vis v4" aria-hidden="true">📚</div><div class="body"><div class="k">02 / App</div><h3><a href="https://agentlingo.app" target="_blank" rel="noopener">Agent Lingo ↗</a></h3><p>Game-style study app for the real estate license exam: bite-sized lessons, streaks and XP for the national and Texas salesperson exams.</p><div class="out"><b>Outcome</b>Live web app at agentlingo.app</div><div class="chips"><span>Web app</span><span>EdTech</span><span>Real estate</span></div></div></article><article class="card pcard"><div class="vis v2" aria-hidden="true">📍</div><div class="body"><div class="k">03 / Local SEO</div><h3><a href="https://rheingolddigital.com" target="_blank" rel="noopener">Rheingold Digital · Local SEO &amp; AI Search ↗</a></h3><p>Local SEO and AI-search work for small businesses, proven first on my own sites: notaryhub365.com · texasapostille365.com · austintxnotary.com · taylortxnotary.com · gatesvilletxnotary.com</p><div class="out"><b>Outcome</b>A network of live local service sites I run</div><div class="chips"><span>Local SEO</span><span>AI search</span><span>Domains</span></div></div></article><article class="card pcard"><div class="vis v3" aria-hidden="true">🤖</div><div class="body"><div class="k">04 / Automation</div><h3>Multi-Bot AI Assistant</h3><p>A team of AI bots that handles day-to-day operations across my businesses: email triage, scheduling, Airtable tracking and social posting.</p><div class="out"><b>Outcome</b>Runs my daily operations</div><div class="chips"><span>Gmail</span><span>Airtable</span><span>Social</span><span>Google APIs</span></div></div></article><article class="card pcard"><div class="vis v5" aria-hidden="true">🛡️</div><div class="body"><div class="k">05 / Live demo</div><h3><a href="https://rheingold777.github.io/atx-crm-demo/" target="_blank" rel="noopener">ATX Data Guard CRM ↗</a></h3><p>React CRM built for my IT Capstone. <a href="https://github.com/Rheingold777/atx-crm-demo" target="_blank" rel="noopener">Source</a></p><div class="out"><b>Outcome</b>Working demo + public source</div><div class="chips"><span>React</span><span>JavaScript</span><span>Hooks</span></div></div></article></div></section>
-
-<section><h2>// Businesses</h2><ul class="v"><li><a href="https://rheingolddigital.com" target="_blank" rel="noopener">Rheingold Digital</a><span>Local SEO for small businesses, Austin</span></li><li><a href="https://notaryhub365.com" target="_blank" rel="noopener">NotaryHub365</a><span>Mobile notary &amp; loan signing, Austin/Round Rock</span></li><li><a href="https://churchlaunchpad.org" target="_blank" rel="noopener">ChurchLaunchpad</a><span>Social media marketing for churches</span></li><li><a href="https://realtormarketingai.com" target="_blank" rel="noopener">RealtorMarketingAI</a><span>AI marketing for real estate agents</span></li></ul></section>
-
-<section id="ministry"><h2>// Ministry</h2><ul class="v"><li><b>Licensed Minister</b><span>General license, United Pentecostal Church International (UPCI)</span></li><li><b>Pastor</b><span>10 years</span></li><li><b>Missionary</b><span>Almost 10 years</span></li><li><b>New Life Hutto</b><span>Operating since 2016 under UPCI's IRS 501(c)(3) group exemption</span></li></ul></section>
-
-<section id="labs"><h2>// Capstone &amp; Cisco labs</h2><div class="labs">
-<figure class="lab"><img src="assets/n-tier-architecture.png" alt="Multi-tier architecture" loading="lazy"><figcaption><b>Multi-tier architecture</b><span>Capstone · CRM system design</span></figcaption></figure>
-<figure class="lab"><img src="assets/distributed-network.png" alt="Global WAN design" loading="lazy"><figcaption><b>Global WAN design</b><span>Capstone · 3-region topology</span></figcaption></figure>
-<figure class="lab"><img src="assets/ospfv2-lab.png" alt="OSPFv2" loading="lazy"><figcaption><b>OSPFv2</b><span>Cisco · CSIS 430</span></figcaption></figure>
-<figure class="lab"><img src="assets/acl-config.png" alt="Extended IPv4 ACLs" loading="lazy"><figcaption><b>Extended IPv4 ACLs</b><span>Cisco · CSIS 430</span></figcaption></figure>
-<figure class="lab"><img src="assets/nat-ipv4.png" alt="NAT / PAT" loading="lazy"><figcaption><b>NAT / PAT</b><span>Cisco · CSIS 430</span></figcaption></figure>
-<figure class="lab"><img src="assets/activity-diagram.png" alt="UML activity diagram" loading="lazy"><figcaption><b>UML activity diagram</b><span>Capstone · systems analysis</span></figcaption></figure>
 </div>
-<p class="more"><a href="https://github.com/Rheingold777/cisco-networking-labs" target="_blank" rel="noopener">→ Cisco labs on GitHub</a></p></section>
-
-<section id="creds"><div class="two">
-<div><h2 id="ai-automation">// Education</h2><div class="cred"><b>BS Information Technology</b><span>Liberty University · Network &amp; Security · 2025</span></div><div class="cred"><b>MBA (In Progress)</b><span>Liberty University · Strategic Management · Expected 2027</span></div><div class="cred"><span>Full list: <a href="#certificates">Certificates</a></span></div>
+<picture><source srcset="assets/headshot.webp" type="image/webp"><img src="assets/headshot.jpg" alt="Bernhard Suppan" width="640" height="640"></picture>
+</section>
 </div>
-<div><h2>// Stack</h2><div class="row"><span class="k">Networking</span><span>Cisco IOS · OSPF · EIGRP · VLANs · NAT/PAT · STP</span></div><div class="row"><span class="k">Security</span><span>ACLs · Firewalls · Security policy</span></div><div class="row"><span class="k">Systems</span><span>Windows Server · Linux · Active Directory</span></div><div class="row"><span class="k">Build</span><span>React · JavaScript · SQL · Java · HTML/CSS · Git</span></div><div class="row"><span class="k">Automation</span><span>Node.js · REST APIs · OAuth 2.0 · Airtable · Meta Graph API</span></div></div>
-</div></section>
 
-<section class="contact" id="contact"><h3>Let's build something.</h3>
-<div class="btns"><a class="btn p" href="mailto:bsuppan@gmail.com">bsuppan@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/bernhardsuppan" target="_blank" rel="noopener">LinkedIn</a></div></section>
+<div class="stats"><div class="wrap">
+<div class="stat"><b>$800M+</b><span>in loan signings notarized</span></div>
+<div class="stat"><b>90%</b><span>repeat clients</span></div>
+<div class="stat"><b>#1</b><span>in two Texas map packs (July 2026)</span></div>
+<div class="stat"><b>EN · DE</b><span>works in English and German</span></div>
+</div></div>
+
+<div class="wrap">
+<section id="work" class="sec">
+<p class="eyebrow">Work with me</p>
+<h2>My agency handles the client work.</h2>
+<div class="row">
+<div class="card big">
+<span class="big-t">Rheingold Digital</span>
+<p>Local SEO, Google Business Profile, websites, and reviews for small businesses around Austin. I run it. I do the work.</p>
+<div class="btns">
+<a class="btn p" href="https://rheingolddigital.com/contact">Book a free visibility check</a>
+<a class="more" href="https://rheingolddigital.com/">See services and pricing →</a>
 </div>
-<footer>© 2026 Bernhard Suppan · Built in Texas</footer>
+</div>
+<div class="card">
+<h3>AI automation or fractional ops?</h3>
+<p>Bots that handle email, follow-ups, and posting. Or a seasoned operator, part-time. Talk to me directly.</p>
+<a class="more" href="#contact">Start a conversation →</a>
+</div>
+</div>
+</section>
+
+<section id="proof" class="sec">
+<p class="eyebrow">Proof</p>
+<h2>Tested on my own businesses first.</h2>
+<div class="row">
+<div class="card">
+<span class="tag">My business</span>
+<h3>NotaryHub365</h3>
+<span class="res">$800M+ notarized · 90% repeat clients</span>
+<p>Mobile notary and loan signing around Austin. Site and Google profile built in-house.</p>
+<a class="more" href="https://notaryhub365.com/">notaryhub365.com ↗</a>
+</div>
+<div class="card">
+<span class="tag">Rheingold Digital</span>
+<h3>Notary map packs</h3>
+<span class="res">#1 in two Texas map packs (July 2026)</span>
+<p>Notary sites built and run in-house. Dated rankings, with receipts.</p>
+<a class="more" href="https://rheingolddigital.com/">See the receipts ↗</a>
+</div>
+</div>
+<div class="row">
+<div class="card">
+<span class="tag">My product</span>
+<h3>SermonRecap</h3>
+<span class="res">Live at New Life Hutto</span>
+<p>Turns each Sunday sermon into a written recap and follow-up text for the congregation.</p>
+<a class="more" href="https://sermonrecap.church/">sermonrecap.church ↗</a>
+</div>
+<div class="card">
+<span class="tag">My product</span>
+<h3>AgentLingo</h3>
+<span class="res">Live web app</span>
+<p>Game-style study app for the real estate license exam. Short lessons, streaks, and XP.</p>
+<a class="more" href="https://agentlingo.app/">agentlingo.app ↗</a>
+</div>
+</div>
+</section>
+
+<section id="hire">
+<div class="dark">
+<p class="eyebrow">Hire me</p>
+<h2>Open to contract, fractional, and remote roles.</h2>
+<div class="pills"><span>Automation consultant</span><span>Operations manager</span><span>Marketing ops</span></div>
+<p>BS in Information Technology, Network and Security (Liberty University, 2025). MBA in Strategic Management, expected 2027. 10 years as a pastor. Nearly 10 years in international mission work.</p>
+<div class="btns">
+<a class="btn" href="resume.html">Résumé, certificates, and labs</a>
+<a class="btn o" href="https://www.linkedin.com/in/bernhardsuppan">LinkedIn</a>
+<a class="btn o" href="https://github.com/Rheingold777">GitHub</a>
+</div>
+</div>
+</section>
+</div>
+
+<div class="wrap">
+<section id="contact" class="contact sec">
+<h2>Let's talk.</h2>
+<p class="lead">One call. You leave with three fixes, whether we work together or not.</p>
+<div class="btns">
+<a class="btn p" href="https://rheingolddigital.com/contact">Book a free visibility check</a>
+<a class="btn" href="mailto:bernhard@rheingolddigital.com">bernhard@rheingolddigital.com</a>
+</div>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap">
+<span>© 2026 Bernhard Suppan · Founder, <a href="https://rheingolddigital.com/">Rheingold Digital</a></span>
+<span>Texas · Works remote</span>
+</div></footer>
 </body>
 </html>
