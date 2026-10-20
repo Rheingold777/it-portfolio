@@ -25,7 +25,7 @@ nav .links a{color:var(--mute);margin-left:22px}
 .btn{font-family:var(--mono);font-size:14px;padding:12px 20px;border-radius:8px;border:1px solid var(--line);color:var(--tx)}
 .btn.p{background:var(--ac);color:#04121a;border-color:var(--ac);font-weight:700}
 .btn:hover{text-decoration:none;border-color:var(--ac)}
-.hero img{width:240px;height:240px;border-radius:20px;object-fit:cover;border:1px solid var(--line);filter:grayscale(.15)}
+.hero img{width:240px;height:240px;border-radius:20px;object-fit:cover;border:1px solid var(--line);background:#fff}
 section{padding:72px 0;border-bottom:1px solid var(--line)}
 h2{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ac);text-transform:uppercase;letter-spacing:.12em;margin-bottom:28px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
@@ -49,6 +49,15 @@ ul.v li a{font-weight:600;min-width:200px}ul.v li span{color:var(--mute);font-si
 .contact{text-align:center;border:0}.contact h3{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin-bottom:24px}
 .contact .btns{justify-content:center}
 footer{padding:28px 0;font-family:var(--mono);font-size:12px;color:var(--mute);text-align:center}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.cert{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.cert b{font-size:16px}.cert span{color:var(--mute);font-size:13px;font-family:var(--mono)}.cert a.vf{font-family:var(--mono);font-size:13px;margin-top:auto}
+.badge{display:inline-block;font-family:var(--mono);font-size:11px;color:#04121a;background:var(--ac);border-radius:999px;padding:2px 8px;width:max-content}
+h3.sub{font-size:15px;color:var(--tx);margin:28px 0 14px;font-weight:600}h3.sub:first-of-type{margin-top:0}
+.pcard{padding:0;overflow:hidden}.pcard .vis{height:120px;display:flex;align-items:center;justify-content:center;font-size:44px}
+.pcard .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}.pcard .out{color:var(--tx);font-size:14px}.pcard .out b{color:var(--ac);font-family:var(--mono);font-size:12px;font-weight:500;display:block}
+.v1{background:linear-gradient(135deg,#0e7490,#7c3aed)}.v2{background:linear-gradient(135deg,#15803d,#0e7490)}.v3{background:linear-gradient(135deg,#b45309,#be185d)}.v4{background:linear-gradient(135deg,#1d4ed8,#22d3ee)}.v5{background:linear-gradient(135deg,#334155,#0f766e)}
+#work .grid{grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:16px;gap:28px}.hero img{width:120px;height:120px;order:-1}nav .links{display:none}.two{grid-template-columns:1fr}section{padding:52px 0}}
 </style>
 <!-- Google Analytics 4 (G-V70C5KFFZ8): fires only on the live domain, not on previews/localhost -->
@@ -78,24 +87,20 @@ footer{padding:28px 0;font-family:var(--mono);font-size:12px;color:var(--mute);t
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#">bernhard<b>.</b>suppan</a><div class="links"><a href="#work">work</a><a href="#labs">labs</a><a href="#creds">credentials</a><a href="#contact">contact</a></div></nav>
+<nav><a class="logo" href="#">bernhard<b>.</b>suppan</a><div class="links"><a href="#certificates">certificates</a><a href="#work">projects</a><a href="#labs">labs</a><a href="#creds">education</a><a href="#contact">contact</a></div></nav>
 <header class="hero">
 <div>
 <div class="eyebrow">&gt; Bernhard Suppan · Texas</div>
 <h1>Local SEO + <em>AI automation</em> for small businesses.</h1>
 <p class="sub">BS in IT (Network &amp; Security). MBA in progress. I build the systems that run my own businesses.</p>
-<div class="btns"><a class="btn p" href="#work">See the work</a><a class="btn" href="https://www.linkedin.com/in/bernhardsuppan" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Rheingold777" target="_blank" rel="noopener">GitHub</a></div>
+<div class="btns"><a class="btn p" href="#work">See the projects</a><a class="btn" href="#certificates">Certificates</a><a class="btn" href="https://www.linkedin.com/in/bernhardsuppan" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Rheingold777" target="_blank" rel="noopener">GitHub</a></div>
 </div>
-<img src="assets/headshot.png" alt="Bernhard Suppan">
+<picture><source srcset="assets/headshot.webp" type="image/webp"><img src="assets/headshot.jpg" alt="Bernhard Suppan, smiling headshot" width="640" height="640"></picture>
 </header>
 
-<section id="work"><h2>// AI &amp; Automation</h2><div class="grid">
-<article class="card"><div class="k">01 / AI system</div><h3><a href="https://sermonrecap.church" target="_blank" rel="noopener">SermonRecap ↗</a></h3><p>Turns sermons into recaps and texts for New Life Hutto.</p><div class="chips"><span>Muse</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></div></article>
-<article class="card"><div class="k">02 / Local SEO</div><h3>Local SEO &amp; AI Search</h3><p><a href="https://rheingolddigital.com" target="_blank" rel="noopener">Rheingold Digital</a>. My own sites: notaryhub365.com · texasapostille365.com · austintxnotary.com · taylortxnotary.com · gatesvilletxnotary.com</p><div class="chips"><span>Local SEO</span><span>AI search</span><span>Domains</span></div></article>
-<article class="card"><div class="k">03 / Automation</div><h3>Multi-Bot AI Assistant</h3><p>AI bots that run day-to-day operations across my businesses.</p><div class="chips"><span>Gmail</span><span>Airtable</span><span>Social</span><span>Google APIs</span></div></article>
-<article class="card"><div class="k">04 / App</div><h3><a href="https://agentlingo.app" target="_blank" rel="noopener">AgentLingo ↗</a></h3><p>Game-style study app for the real estate license exam: bite-sized lessons, streaks and XP for the national and Texas salesperson exams.</p><div class="chips"><span>Web app</span><span>EdTech</span><span>Real estate</span></div></article>
-<article class="card"><div class="k">05 / Live demo</div><h3><a href="https://rheingold777.github.io/atx-crm-demo/" target="_blank" rel="noopener">ATX Data Guard CRM ↗</a></h3><p>React app built for my IT Capstone. <a href="https://github.com/Rheingold777/atx-crm-demo" target="_blank" rel="noopener">Source</a></p><div class="chips"><span>React</span><span>JavaScript</span><span>Hooks</span></div></article>
-</div></section>
+<section id="certificates"><h2>// Certificates</h2><h3 class="sub">Anthropic · Claude Academy</h3><div class="certs"><div class="cert"><span class="badge">Passed 100%</span><b>Claude 101</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://verify.skilljar.com/c/3dv4jkt984a2" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>AI Fluency: Framework &amp; Foundations</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/4eb1d12a921b70a8415e87278ca25619" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Claude Code in Action</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/f83b4004936eb5883d4b7469997f448d" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Introduction to Model Context Protocol</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/8bc126b3c636fe4b3e0284db522e80e6" target="_blank" rel="noopener">Verify ↗</a></div><div class="cert"><span class="badge">Passed 100%</span><b>Model Context Protocol: Advanced Topics</b><span>Anthropic · Oct 2026</span><a class="vf" href="https://academy.claude.com/verify/62d82185ee038b88aa3bcbc15c853c36" target="_blank" rel="noopener">Verify ↗</a></div></div><h3 class="sub">Google</h3><div class="certs"><div class="cert"><b>Introduction to Large Language Models</b><span>Google Cloud · Oct 2026</span></div><div class="cert"><b>Introduction to Generative AI</b><span>Google Cloud · Oct 2026</span></div><div class="cert"><b>Fundamentals of Digital Marketing</b><span>Google · Oct 2026 · Credential ID 483666419</span></div></div><h3 class="sub">Education &amp; IT</h3><div class="certs"><div class="cert"><b>BS Information Technology</b><span>Liberty University · Network &amp; Security · 2025</span></div><div class="cert"><b>MBA (In Progress)</b><span>Liberty University · Strategic Management · Expected 2027</span></div><div class="cert"><b>CompTIA A+ Coursework</b><span>Hardware &amp; OS · Exam prep complete</span></div></div></section>
+
+<section id="work"><h2>// Projects</h2><div class="grid"><article class="card pcard"><div class="vis v1" aria-hidden="true">🎙️</div><div class="body"><div class="k">01 / AI system</div><h3><a href="https://sermonrecap.church" target="_blank" rel="noopener">SermonRecap ↗</a></h3><p>Turns each sermon into a written recap and follow-up texts for New Life Hutto.</p><div class="out"><b>Outcome</b>Sermon → recap &amp; texts, ready to share</div><div class="chips"><span>Muse</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></div></div></article><article class="card pcard"><div class="vis v4" aria-hidden="true">📚</div><div class="body"><div class="k">02 / App</div><h3><a href="https://agentlingo.app" target="_blank" rel="noopener">Agent Lingo ↗</a></h3><p>Game-style study app for the real estate license exam: bite-sized lessons, streaks and XP for the national and Texas salesperson exams.</p><div class="out"><b>Outcome</b>Live web app at agentlingo.app</div><div class="chips"><span>Web app</span><span>EdTech</span><span>Real estate</span></div></div></article><article class="card pcard"><div class="vis v2" aria-hidden="true">📍</div><div class="body"><div class="k">03 / Local SEO</div><h3><a href="https://rheingolddigital.com" target="_blank" rel="noopener">Rheingold Digital · Local SEO &amp; AI Search ↗</a></h3><p>Local SEO and AI-search work for small businesses, proven first on my own sites: notaryhub365.com · texasapostille365.com · austintxnotary.com · taylortxnotary.com · gatesvilletxnotary.com</p><div class="out"><b>Outcome</b>A network of live local service sites I run</div><div class="chips"><span>Local SEO</span><span>AI search</span><span>Domains</span></div></div></article><article class="card pcard"><div class="vis v3" aria-hidden="true">🤖</div><div class="body"><div class="k">04 / Automation</div><h3>Multi-Bot AI Assistant</h3><p>A team of AI bots that handles day-to-day operations across my businesses: email triage, scheduling, Airtable tracking and social posting.</p><div class="out"><b>Outcome</b>Runs my daily operations</div><div class="chips"><span>Gmail</span><span>Airtable</span><span>Social</span><span>Google APIs</span></div></div></article><article class="card pcard"><div class="vis v5" aria-hidden="true">🛡️</div><div class="body"><div class="k">05 / Live demo</div><h3><a href="https://rheingold777.github.io/atx-crm-demo/" target="_blank" rel="noopener">ATX Data Guard CRM ↗</a></h3><p>React CRM built for my IT Capstone. <a href="https://github.com/Rheingold777/atx-crm-demo" target="_blank" rel="noopener">Source</a></p><div class="out"><b>Outcome</b>Working demo + public source</div><div class="chips"><span>React</span><span>JavaScript</span><span>Hooks</span></div></div></article></div></section>
 
 <section><h2>// Businesses</h2><ul class="v"><li><a href="https://rheingolddigital.com" target="_blank" rel="noopener">Rheingold Digital</a><span>Local SEO for small businesses, Austin</span></li><li><a href="https://notaryhub365.com" target="_blank" rel="noopener">NotaryHub365</a><span>Mobile notary &amp; loan signing, Austin/Round Rock</span></li><li><a href="https://churchlaunchpad.org" target="_blank" rel="noopener">ChurchLaunchpad</a><span>Social media marketing for churches</span></li><li><a href="https://realtormarketingai.com" target="_blank" rel="noopener">RealtorMarketingAI</a><span>AI marketing for real estate agents</span></li></ul></section>
 
@@ -110,15 +115,7 @@ footer{padding:28px 0;font-family:var(--mono);font-size:12px;color:var(--mute);t
 <p class="more"><a href="https://github.com/Rheingold777/cisco-networking-labs" target="_blank" rel="noopener">→ Cisco labs on GitHub</a></p></section>
 
 <section id="creds"><div class="two">
-<div><h2 id="ai-automation">// Credentials</h2>
-<div class="cred"><b>BS Information Technology</b><span>Liberty University · Network &amp; Security · 2025</span></div>
-<div class="cred"><b>MBA (In Progress)</b><span>Liberty University · Strategic Management · Expected 2027</span></div>
-<div class="cred"><b>CompTIA A+ Coursework</b><span>Hardware &amp; OS · Exam prep complete</span></div>
-<div class="cred"><b>Introduction to Large Language Models</b><span>Google Cloud · Oct 2026</span></div>
-<div class="cred"><b>Introduction to Generative AI</b><span>Google Cloud · Oct 2026</span></div>
-<div class="cred"><b>Fundamentals of Digital Marketing</b><span>Google · Oct 2026 · Credential ID 483666419</span></div>
-<div class="cred"><b><a href="https://anthropic.skilljar.com/claude-101" target="_blank" rel="noopener">Claude 101</a></b><span>Anthropic Academy · Oct 2026</span></div>
-<div class="cred"><span>More AI courses in progress</span></div>
+<div><h2 id="ai-automation">// Education</h2><div class="cred"><b>BS Information Technology</b><span>Liberty University · Network &amp; Security · 2025</span></div><div class="cred"><b>MBA (In Progress)</b><span>Liberty University · Strategic Management · Expected 2027</span></div><div class="cred"><span>Full list: <a href="#certificates">Certificates</a></span></div>
 </div>
 <div><h2>// Stack</h2><div class="row"><span class="k">Networking</span><span>Cisco IOS · OSPF · EIGRP · VLANs · NAT/PAT · STP</span></div><div class="row"><span class="k">Security</span><span>ACLs · Firewalls · Security policy</span></div><div class="row"><span class="k">Systems</span><span>Windows Server · Linux · Active Directory</span></div><div class="row"><span class="k">Build</span><span>React · JavaScript · SQL · Java · HTML/CSS · Git</span></div><div class="row"><span class="k">Automation</span><span>Node.js · REST APIs · OAuth 2.0 · Airtable · Meta Graph API</span></div></div>
 </div></section>
